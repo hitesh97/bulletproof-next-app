@@ -25,7 +25,6 @@ export default function Home ({ postList }) {
 
 export async function getServerSideProps () {
   const postList = await githubCms.getPostList()
-
   return {
     props: {
       postList
